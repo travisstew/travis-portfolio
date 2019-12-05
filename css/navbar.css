@@ -7,26 +7,22 @@
   padding: 1rem;
   margin-right: 4rem;
   color: white;
-  font-family: 'Hind Vadodara', sans-serif;
-  
+  font-family: 'Hind Vadodara', sans-serif; 
 }
 .navbar{
   /* padding: 2rem; */
   overflow: hidden;
   width: 100%;
   position: fixed;
-  
 }
 .navbar a:hover{
   /* background: coral; */
   color: black;
-  
 }
 .changeColor{
   background: green;
 }
-.burger-menu{
-  
+.burger-menu{ 
   width: 35px;
   height: 5px;
   background-color: white;
@@ -55,9 +51,6 @@
   height: 35rem;
 
 }
-/* img{
-  overflow: hidden;
-} */
 .responsive{
   float: right;
   width: 100%;
@@ -85,9 +78,12 @@
 #p2{
   font-size: 1rem;
 }
-
-/*  ===========  scroll features  ==============  */
-
+.name-title-mobile{
+  display: none;
+  padding-top: 6rem;
+  padding-left: 5rem;
+  color: white;
+}
 
 
 /* =========== section ===============*/
@@ -111,7 +107,7 @@
   .burger-menu{
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: white;
     margin: 6px 0;
     /* float: right; */
   }
@@ -126,14 +122,35 @@
   #brand-mobile{
     display: block;
     float: left;
-    color: black;
+    color:white;
     font-weight: bold;
   }
   .responsive{
     width: 20rem;
     padding: 0;
   }
-  .profile-image{
-    /* img div */
+  .name-title{
+   display: none;
   }
+  .name-title-mobile{
+    display: block;
+    padding-top: 6rem;
+    padding-left: 0;
+    color: white;
+  }
+  .name-title-mobile h1{
+    font-size: 4.3em;
+    padding-bottom: 0;
+    font-weight: bold;
+    font-family: 'Hind Vadodara', sans-serif;
+    text-align: center;
+  }
+  .name-title-mobile p{
+    font-size: 1.4em;
+    font-family: 'Hind Vadodara', sans-serif;
+    padding-bottom: 1.7rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
   }
