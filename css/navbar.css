@@ -1,0 +1,139 @@
+.navbar a{
+  text-decoration: none;
+  color: black;
+  float: right;
+  text-align: center;
+  /* margin-right: 3rem; */
+  padding: 1rem;
+  margin-right: 4rem;
+  color: white;
+  font-family: 'Hind Vadodara', sans-serif;
+  
+}
+.navbar{
+  /* padding: 2rem; */
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  
+}
+.navbar a:hover{
+  /* background: coral; */
+  color: black;
+  
+}
+.changeColor{
+  background: green;
+}
+.burger-menu{
+  
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  /* float: right; */
+}
+.burger{
+  display: none;
+  float: right;
+  padding: 1.2rem;
+}
+#brand-mobile{
+  display: none;
+  padding: 1.2rem;
+  padding-top: 1.4rem;
+  font-size: 1.5rem;
+}
+
+
+/*======== main section ============= */
+
+
+.main-section{
+  background: rgb(55,55,55);
+  width: 100%;
+  height: 35rem;
+
+}
+/* img{
+  overflow: hidden;
+} */
+.responsive{
+  float: right;
+  width: 100%;
+  max-width: 453px;
+  height: auto;
+  padding-right: 5rem;
+}
+.name-title{
+  padding-top: 6rem;
+  padding-left: 5rem;
+  color: white;
+}
+.name-title h1{
+  font-size: 4.3em;
+  padding-bottom: 0;
+  font-weight: bold;
+  font-family: 'Hind Vadodara', sans-serif;
+}
+.name-title p{
+  font-size: 1.4em;
+  font-family: 'Hind Vadodara', sans-serif;
+  padding-bottom: 1.7rem;
+  line-height: 1.6;
+}
+#p2{
+  font-size: 1rem;
+}
+
+/*  ===========  scroll features  ==============  */
+
+
+
+/* =========== section ===============*/
+
+.section{
+  height: 50rem;
+}
+
+
+/* ======= container  ========= */
+
+/* .container{
+  width: 80%;
+} */
+
+/*======= media queries ========= */
+
+@media only screen and (min-width: 320px) and (max-width: 420px){
+ 
+
+  .burger-menu{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    /* float: right; */
+  }
+  .burger{
+    display:block;
+    float: right;
+    padding: 1.2rem;
+  }
+  .navbar a{
+    display: none;
+  }
+  #brand-mobile{
+    display: block;
+    float: left;
+    color: black;
+    font-weight: bold;
+  }
+  .responsive{
+    width: 20rem;
+    padding: 0;
+  }
+  .profile-image{
+    /* img div */
+  }
+  }
