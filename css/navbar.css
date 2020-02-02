@@ -1,19 +1,24 @@
-.navbar a{
+/* .navbar a{
   text-decoration: none;
   color: black;
   float: right;
-  text-align: center;
-  /* margin-right: 3rem; */
+
+
   padding: 1rem;
   margin-right: 4rem;
-  color: white;
+ 
   font-family: 'Hind Vadodara', sans-serif; 
-}
+} */
 .navbar{
   /* padding: 2rem; */
   overflow: hidden;
   width: 100%;
   position: fixed;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+li{
+  display: inline;
 }
 .navbar a:hover{
   /* background: coral; */
@@ -46,7 +51,10 @@
 
 
 .main-section{
-  background: rgb(55,55,55);
+  /* background: rgb(55,55,55); */
+  /* background: #ffffff; */
+  background: #f8f9fa;
+ 
   width: 100%;
   height: 35rem;
   
@@ -62,13 +70,16 @@
 .name-title{
   padding-top: 6rem;
   padding-left: 5rem;
-  color: white;
+  /* color: white; */
+  /* background: #ffffff; */
+  background: #f8f9fa;
 }
 .name-title h1{
   font-size: 4.3em;
   padding-bottom: 0;
   font-weight: bold;
   font-family: 'Hind Vadodara', sans-serif;
+  padding-bottom: .1em
 }
 .name-title p{
   font-size: 1.4em;
@@ -85,7 +96,11 @@
   padding-left: 5rem;
   color: white;
 }
-
+/* ===== footer  ======== */
+footer{
+  /* background: rgb(55,55,55); */
+  height:14rem;
+}
 
 /* =========== projects ===============*/
 
@@ -100,18 +115,28 @@
   grid-template-columns: auto auto ;
 }
 .grid-item{
-  background:grey;
+  
   /* width: 15rem; */
   height: 15rem;
+  background-size: contain;
+  background-size: cover;
+  
 }
 .container{
   width: 70rem;
   margin: auto;
 }
 #grid1{
-  background-image: url(../images/Screen\ Shot\ 2019-12-12\ at\ 12.32.25\ AM.png);
-  background-size: contain;
-  background-size: cover;
+  background-image: url(../images/Screen\ Shot\ 2019-12-12\ at\ 12.32.25\ AM.png)
+}
+#grid2{
+  background-image: url(../images/Screen\ Shot\ 2019-12-12\ at\ 2.16.50\ AM.png)
+}
+.card{
+  /* background: rgba(165, 83, 83, 0.247); */
+  background: rgba(255, 127, 80, 0.644);
+  width: 100%;
+  height: 100%;
   
 }
 
@@ -177,5 +202,13 @@
     line-height: 1.6;
     text-align: center;
   }
+  /* .grid-container{
+    padding-top: 20px;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    grid-template-columns: auto  ;
+  } */
   
   }
+
