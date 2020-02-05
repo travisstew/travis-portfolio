@@ -158,7 +158,8 @@ ul{
     width: 20rem;
     margin: auto;
     transition: all 0.7s ease;
-    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.46)
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.46);
+    cursor: pointer;
 }
 
 .p1{
@@ -241,7 +242,19 @@ textarea{
   width: 100%;
   font-size: large;
   border: none;
+  margin-bottom: 1rem;
 }
 #submit-btn{
-
+  background: #4DA1A9;
+  color: white;
+  width: 7rem;
+  height: 2.5rem;
+  font-size: medium;
+  border-radius: 4rem;
+  border: 3px solid #4DA1A9;
+}
+#submit-btn:hover{
+  background: white;
+  color: black;
+  cursor: pointer;
 }
