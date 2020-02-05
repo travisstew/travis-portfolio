@@ -177,3 +177,71 @@ ul{
      background-size: cover;
 }
 
+/* ====== contact form  ==== */
+
+.contact h3{
+  font-size: 2.1rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.contact{
+  margin-top: 13rem; 
+}
+input{
+  border: none;
+  /* width: 50%; */
+  height: 3rem;
+  border-bottom: solid;
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+   border-width: 1px;
+   border-color: lightgray;
+   font-size: large;
+   margin-bottom: 2rem;
+}
+input:focus{
+  outline: none;
+  border-bottom-color: black;
+}
+form .class{
+  display: flex;
+}
+form input:first-child{
+  margin: auto;
+  width: 50%;
+  margin: 0;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+}
+form input:nth-child(2){
+  margin: auto;
+    width: 45%;
+    margin-right: 0;
+}
+::placeholder{
+  color: rgb(151, 148, 148);
+  font-size: medium;
+}
+form input:nth-child(3){
+  width: 100%;
+  margin-bottom: 3rem;
+}
+#email{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+textarea:focus{
+  outline: none;
+  border-bottom: solid;
+  border-bottom-color:black ;
+  border-width: 1px;
+}
+textarea{
+  width: 100%;
+  font-size: large;
+  border: none;
+}
+#submit-btn{
+
+}

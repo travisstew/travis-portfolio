@@ -4,59 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Tajawal&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:300&display=swap" rel="stylesheet">
-  <script src="js/index.js"></script>
+  <link rel="stylesheet" href="/css/index2.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Trocchi&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Trocchi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/js/index2.js"></script>
+  <title>Document</title>
 </head>
-
 <body>
-  <div class="main-section">
-    <div class="navbar">
-      <a href="" style="float:left">Brand</a>
-      <a href="">Home</a >
-      <a href="">About</a >
-      <a href="">Portfolio</a>
-      <a href="">Contact</a>
-      <a  id="brand-mobile" >Brand</a>
-      <div class="burger">
-        <div class="burger-menu"></div>     
-        <div class="burger-menu"></div>     
-        <div class="burger-menu"></div>   
-    </div>  
-    </div>
-      <div class="profile-image">
-       <img class="responsive" src="images/FC850D24-C923-4719-B52D-A6454CCDE87F_1_201_a-removebg-preview.png" alt="">
-      </div> 
-       <div class="name-title">
-        <h1>Travis Stewart</h1>
-        <p>Full-Stack Web Developer</p>
-        <p id="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti harum sint tenetur unde alias natus minus illo maiores at perspiciatis similique nihil maxime temporibus, eveniet eum voluptas nobis sed illum odio nulla asperiores. Iste qui quod aliquid modi adipisci recusandae.</p>
+  <div id="main-div" class="main-color ">
+      <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li id="nav-name"><a href="" class="font">Travis Stewart</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+            
+          </ul>
+      </nav>
+  
+      <div class="container">
+          <div id="greet">
+              <div class="one">
+                  <h1 class="font animated slideInLeft ">Travis Stewart</h1>
+                  <h2 class="font animated slideInLeft delay-1s">I'm A Full Stack Web Developer</h2>
+                  <div class="animated slideInLeft delay-2s " > <a href="" class="font" >Portfolio</a> </div>     
+              </div>
+          </div>
+
       </div>
-      <!-- mobile name-title-mobile -->
-      <div class="name-title-mobile">
-        <h1>Travis Stewart</h1>
-        <p>Full-Stack Web Developer</p>
+  </div>
+
+ 
+  <div class="about">
+     <div class="container"> 
+        <h3 class="font">About Me</h3>
+        <p class="line"></p>
+        <div class="about-div">
+          <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus delectus, ratione assumenda doloremque laudantium ab sapiente repellat minima doloribus nulla culpa explicabo voluptate, molestias repellendus voluptas cupiditate in minus placeat, rem modi quisquam nihil optio beatae tenetur. Earum, ipsa doloremque.</p></div>         
+            <img src="/images/FC850D24-C923-4719-B52D-A6454CCDE87F_1_201_a-removebg-preview.png" alt=""> 
+          <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatibus velit, recusandae doloremque illum non enim debitis sequi nisi incidunt fugit suscipit nostrum est, unde ex sint mollitia alias libero, at totam ut consequuntur ipsa! Culpa quae illo dolorum fugiat.</p></div>
+        </div>
       </div>
-
-</div>
-
-
-<div class="projects">
-  <div class="container">
-    <div class="grid-container">
-      <div class="grid-item" id="grid1"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
+  </div>
+ 
+  <div class="portfolio">
+    <div class="container">
+      <h3 class="font">My Portfolio</h3>
+          <div class="slide portfolio-div">
+            <div class="p1 fit-background"></div>
+              <div class="p2 "></div>
+              <div class="p3 "></div>
+          </div>  
+          <div class="slide2 portfolio-div">
+              <div class="p4 "></div>
+              <div class="p5 "></div>
+              <div class="p6 "></div>
+          </div>  
+          <p style="text-align: right;">view more ....</p>
     </div>
   </div>
 
-</div>
-
+  <div class="contact">
+      <div class="container">
+        <h3 class="font">Contact Form</h3>
+        
+        <form action="POST" data-netlify="true">
+          <div class="name">
+            <input type="text" name="first-name" placeholder="First Name">
+            <input type="text" name="last-name" placeholder="Last Name">
+          </div>
+          
+          <input id="email" type="email" name="email" placeholder="Email address">
+          <input type="text" name="subject" placeholder="Subject of the message">
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Type your message here.."></textarea>
+          <input type="submit" id="submit-btn">
+        </form>
+      </div>
+  </div>
 </body>
 </html>
