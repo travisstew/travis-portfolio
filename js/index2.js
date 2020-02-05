@@ -27,14 +27,9 @@ $(document).ready(function () {
           $('.slide2').css('display','flex');
              $('.slide').addClass('animated fadeInLeft');
              $('.slide2').addClass('animated fadeInRight');
-
             $('.portfolio-div div').hover(function () {
             $(this).css('transform', 'scale(1.2)');
-
-           
             $(this).css('box-shadow', '0 7px 4px #777');
-
-
             $(this).css('box-shadow', 'inset 0 0 0 100vw rgba(0,0,0,0.5)');
           }, function () {
             $(this).css('transform', 'scale(1.0)')

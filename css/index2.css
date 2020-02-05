@@ -258,3 +258,6 @@ textarea{
   color: black;
   cursor: pointer;
 }
+#subject{
+  width: 100%;
+}
