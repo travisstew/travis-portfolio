@@ -286,3 +286,26 @@ footer img{
 .icons a{
   padding-right: 1rem;
 }
+
+/* ===== tablet ======= */
+
+@media only screen and (min-width: 768px) and (max-width: 840px){
+  #main-div{
+    background-position-x: 24rem;
+  }
+  .about-div img{
+    display: none;
+  }
+  .about-div{
+    display: block;
+  }
+  .about-div p:first-child{
+    padding-bottom: 2rem;
+  }
+  .about-div p{
+    font-size: 20px;
+  }
+  form input:first-child{
+    width: 100%;
+  }
+}

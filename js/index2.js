@@ -25,8 +25,8 @@ $(document).ready(function () {
          if($(this).scrollTop() > 830){
           $('.slide').css('display','flex');
           $('.slide2').css('display','flex');
-             $('.slide').addClass('animated fadeInLeft');
-             $('.slide2').addClass('animated fadeInRight');
+             $('.slide').addClass('animated fadeIn slower delay-1s');
+             $('.slide2').addClass('animated fadeIn slower delay-2s');
             $('.portfolio-div div').hover(function () {
             $(this).css('transform', 'scale(1.2)');
             $(this).css('box-shadow', '0 7px 4px #777');
