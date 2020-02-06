@@ -265,3 +265,24 @@ textarea{
 #subject{
   width: 100%;
 }
+
+/* ====== footer ===== */
+
+footer{
+  height: 14rem;
+  background: #343A45;
+  margin-top: 13rem;
+}
+footer img{
+  /* width: 40px; */
+  width: 2rem;
+}
+.icons{
+    width: 10rem;
+    display: flex;
+    margin: auto;
+    padding-top: 5rem;
+}
+.icons a{
+  padding-right: 1rem;
+}
