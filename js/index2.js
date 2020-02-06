@@ -34,18 +34,19 @@ $(document).ready(function () {
           }, function () {
             $(this).css('transform', 'scale(1.0)')
             $(this).css('box-shadow', '')
-          }
-        );
-        
-        
-        }
-         
-
+          });
+        } 
       });
    });
   
-  
+   $('.portfolio-div div').on('click', function(){
+        window.location.href = 'https://www.yahoo.com/'
+
+   })
+   
 
 
   
   });
+
+  
