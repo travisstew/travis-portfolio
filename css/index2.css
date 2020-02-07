@@ -318,6 +318,8 @@ footer img{
 
   .menu{
     display: none;
+    position: absolute;
+    width: 100%;
   }
   #nav-name{
     display: none;
