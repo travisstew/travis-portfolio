@@ -4,7 +4,6 @@ $(document).ready(function () {
         
       $(window).scroll(function () {
             
-        
          if ($(this).scrollTop() < 20) {
             $('nav a').css('color', '#5c5c5c');
             $('nav').css('background','	rgb(245,245,245)');
@@ -42,7 +41,7 @@ $(document).ready(function () {
     }
 
   
-  // ======== link to portfolio projects =======
+  // ======== link to portfolio projects ======= //
   
    $('.portfolio-div div').on('click', function(){
         window.location.href = 'https://www.yahoo.com/'
@@ -50,15 +49,10 @@ $(document).ready(function () {
    })
    
 
-              // ======= responsive navbar =========
+ // ======= responsive navbar ========= //
    $('.toggle-button').on('click', function () {
      
-    //      $('.menu').css({'display':'grid','background':'#343A45'});
-    //  $('nav').css({'background':'#343A45','color':'white'});
-    //  $('.toggle-button .bar').css({'background-color':'white'});
-    //  $('nav a').css('color', 'white');
-    //  $('li').css({'text-align':'start','padding-top':'1rem','padding-botton':'1rem', 'padding-left':'1rem'});
-         $('.menu').toggleClass('menu1')
+     $('.menu').toggleClass('menu1')
      $('nav').toggleClass('nav1')
      $('span').toggleClass('bar1');
      $('nav a').toggleClass('span1')
