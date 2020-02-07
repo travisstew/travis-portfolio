@@ -51,6 +51,15 @@ ul{
   margin: auto;
   text-align: center;
 }
+.toggle-button{
+  display: none;
+}
+.brand-title{
+  display: none;
+}
+
+
+
 /* ====== colors ========= */
 
 .main-color{
@@ -287,9 +296,38 @@ footer img{
   padding-right: 1rem;
 }
 
+
+
+
+
 /* ===== tablet ======= */
 
 @media only screen and (min-width: 768px) and (max-width: 840px){
+ 
+  /*==========  responsive nav ========================= */
+  .menu{
+    display: none;
+  }
+  .brand-title{
+    display: block;
+  }
+  .toggle-button{
+    position: absolute;
+    top: .75rem;
+    right:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+  }
+  .toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  }
+ 
   #main-div{
     background-position-x: 24rem;
   }
@@ -308,4 +346,10 @@ footer img{
   form input:first-child{
     width: 100%;
   }
+  form input:nth-child(2){
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+
 }
