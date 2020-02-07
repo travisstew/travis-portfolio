@@ -402,8 +402,31 @@ footer img{
       padding-left: 1rem; 
     } 
 
-      /* === end nav menu click ==== */
+      /* === end nav menu click ==== */ 
 
-    
+}
+@media only screen and (min-width: 320px) and (max-width: 420px){
+
+  #main-div{
+    background-position-x: -3rem;
+  }
+  ul{
+    display: inline-grid;
+  }
+  #greet{
+    margin-top: 26rem;
+    margin-left: 2rem;
+    width: auto;
+  }
+  .about-div{
+    display: block;
+  }
+  form input:first-child{
+    width: 100%;
+  }
+  form input:nth-child(2){
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 
 }

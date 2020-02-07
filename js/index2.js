@@ -48,7 +48,7 @@ $(document).ready(function () {
 
    })
    
-
+   if ($('body').innerWidth() <= 768 ){
  // ======= responsive navbar ========= //
    $('.toggle-button').on('click', function () {
      
@@ -60,7 +60,7 @@ $(document).ready(function () {
     
      });
   
-
+    }
        
   });
 
