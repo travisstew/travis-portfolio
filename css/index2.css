@@ -305,11 +305,18 @@ footer img{
 @media only screen and (min-width: 768px) and (max-width: 840px){
  
   /*==========  responsive nav ========================= */
+ 
+
   .menu{
+    display: none;
+  }
+  #nav-name{
     display: none;
   }
   .brand-title{
     display: block;
+    font-size: larger;
+    padding-bottom: 19px;
   }
   .toggle-button{
     position: absolute;
@@ -321,7 +328,7 @@ footer img{
     width: 31px;
     height: 21px;
   }
-  .toggle-button .bar{
+ .bar{
   height: 3px;
   width: 100%;
   background-color: black;
@@ -350,6 +357,36 @@ footer img{
     margin-bottom: 2rem;
     width: 100%;
   }
+  
 
+    /* === nav menu click ==== */
+    .menu1{
+      display: grid;
+      background: #343A45;
+    } 
+    .nav1{
+      background: #343A45;
+      color: white;
+    }
+     .bar1{
+      background-color: white;
+      height: 3px;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .span1{
+      color: white;
+    }
+    .li{
+      text-align: start;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 1rem; 
+    } 
+
+      /* === end nav menu click ==== */
+
+    
 
 }
