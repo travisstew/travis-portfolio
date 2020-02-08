@@ -188,6 +188,9 @@ ul{
      background-position: center;
      background-size: cover;
 }
+.sm-portfolio{
+  display: none;
+}
 
 /* ====== contact form  ==== */
 
@@ -413,9 +416,9 @@ footer img{
     position: absolute;
     width: 100%;
   }
-  /* .menu{
+  .about-div img{
     display: none;
-  } */
+  }
   #main-div{
     background-position-x: 0rem;
     background-position-y: 0rem;
@@ -473,7 +476,21 @@ footer img{
     font-weight: bolder;
     padding-left: 11px;
   }
-
+  #p2{
+    display: none;
+  }
+  #p3{
+    display: none;
+  }
+  #p5{
+    display: none;
+  }
+  #p6{
+    display: none;
+  }
+  .sm-portfolio{
+    display: flex;
+  }
 
       /* === nav menu click ==== */
       .menu1{
