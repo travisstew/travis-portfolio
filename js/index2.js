@@ -59,6 +59,13 @@ $(document).ready(function () {
      $('li').toggleClass('li');
     
      });
+
+     if ($('body').innerWidth() <= 420 ){
+        $('div h1').removeClass("animated slideInLeft");
+        $('div h2').removeClass("animated slideInLeft");
+        $('div div').removeClass("animated slideInLeft");
+
+     }
   
     
        
