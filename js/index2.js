@@ -46,14 +46,14 @@ $(document).ready(function () {
           github: 'https://github.com/travisstew/Broad-Brush.git'
     }
     var scrapping ={
-      description: 'news scrapping site',
-      website:'https://headline-scrap.herokuapp.com/',
-      github: 'https://github.com/travisstew/scrapping-news.git'
+          description: 'news scrapping site',
+          website:'https://headline-scrap.herokuapp.com/',
+          github: 'https://github.com/travisstew/scrapping-news.git'
     }
     var clicky = {
-      description: 'clicky game ',
-      website: "https://clicky-app-memory.herokuapp.com/",
-      github: "https://github.com/travisstew/Clicky-Memory-Game.git"
+          description: 'clicky game ',
+          website: "https://clicky-app-memory.herokuapp.com/",
+          github: "https://github.com/travisstew/Clicky-Memory-Game.git"
     }
 
 
@@ -61,10 +61,10 @@ $(document).ready(function () {
   // ======== link to portfolio projects ======= //
   
    $('.portfolio-div div').on('click', function(){
-        // window.location.href = 'https://www.yahoo.com/';
+        
       $('.portfolio-projects').css('display', 'none');
       $('.show-project').css('display', 'block');
-      $('.show-project').animate({width:'43rem'},{queue:false, duration: 3000}).animate({height:'23rem'},3000);
+      // $('.show-project').animate({width:'43rem'},{queue:false, duration: 3000}).animate({height:'23rem'},3000);
       
       console.log($(this).data('project'));
       

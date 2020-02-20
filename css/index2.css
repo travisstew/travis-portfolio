@@ -281,6 +281,12 @@ textarea{
   /* width: 62rem; */
   margin: auto;
   position: relative;
+
+  width: 43rem;
+  height: 23rem;
+  overflow: hidden;
+  border-radius: 3rem;
+  box-shadow: 3px 4px 7px 0px;
 }
 .exit{
   position: absolute;
@@ -295,6 +301,8 @@ textarea{
   color: white;
   padding-top: 10rem;
   display: inline-flex;
+
+ 
 }
 .show-project p{
   padding-left: 3rem;
@@ -443,6 +451,21 @@ footer img{
 
       /* === end nav menu click ==== */ 
 
+      .show-project {
+        display: none;
+        background: #4DA1A9;
+        margin: auto;
+        position: relative;
+        width: auto;
+        height: 23rem;
+        overflow: hidden;
+        border-radius: 3rem;
+        box-shadow: 3px 4px 7px 0px;
+    }
+    .portfolio-div div{
+      margin: 13px;
+    }
+
 }
 @media only screen and (min-width: 320px) and (max-width: 420px){
   .brand-title h4{
@@ -556,5 +579,33 @@ footer img{
       } 
   
         /* === end nav menu click ==== */ 
+
+        .show-project {
+         width: 100%;
+         height: max-content;
+        }
+        .show-project img{
+          width: 57px;
+          border-radius: 50%;
+        }
+        .show-project div{
+          display: block;
+          padding-top: 74px;
+        }
+        .show-project img:hover{
+          background: darkgrey;
+        }
+      .show-project p{
+        margin: auto;
+        padding-top: 14px;
+        width: 14rem;
+      }
+      .show-project p{
+        padding-left: 0;
+        padding-bottom: 29px;
+      }
+      #internet{
+        margin-right: 0;
+      }
 
 }
