@@ -226,7 +226,7 @@ form input:first-child{
   margin: auto;
   width: 50%;
   margin: 0;
-  margin-right: 3rem;
+  margin-right: 2rem;
   margin-bottom: 2rem;
 }
 form input:nth-child(2){
@@ -275,6 +275,40 @@ textarea{
 #subject{
   width: 100%;
 }
+.show-project{
+  display: none;
+  background:#4DA1A9;
+  /* width: 62rem; */
+  margin: auto;
+  position: relative;
+}
+.exit{
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+.exit:hover{
+  cursor: pointer;
+}
+.show-project div{
+  /* width: 22rem; */
+  color: white;
+  padding-top: 10rem;
+  display: inline-flex;
+}
+.show-project p{
+  padding-left: 3rem;
+}
+#github{
+  margin-right: 3rem;
+}
+#internet{
+  margin-right:6rem
+}
+
+
+
+
 
 /* ====== footer ===== */
 

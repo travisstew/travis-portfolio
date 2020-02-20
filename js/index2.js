@@ -25,8 +25,8 @@ $(document).ready(function () {
          if($(this).scrollTop() > 830){
           $('.slide').css('display','flex');
           $('.slide2').css('display','flex');
-             $('.slide').addClass('animated fadeIn slower delay-1s');
-             $('.slide2').addClass('animated fadeIn slower delay-2s');
+             $('.slide').addClass('animated fadeIn slow ');
+             $('.slide2').addClass('animated fadeIn slow delay-1s');
             $('.portfolio-div div').hover(function () {
             $(this).css('transform', 'scale(1.2)');
             $(this).css('box-shadow', '0 7px 4px #777');
@@ -39,14 +39,61 @@ $(document).ready(function () {
       });
 
     }
+    
+    var broadbrush = {
+          description: "website",
+          website: 'https://broad-brush.herokuapp.com/',
+          github: 'https://github.com/travisstew/Broad-Brush.git'
+    }
+    var scrapping ={
+      description: 'news scrapping site',
+      website:'https://headline-scrap.herokuapp.com/',
+      github: 'https://github.com/travisstew/scrapping-news.git'
+    }
+    var clicky = {
+      description: 'clicky game ',
+      website: "https://clicky-app-memory.herokuapp.com/",
+      github: "https://github.com/travisstew/Clicky-Memory-Game.git"
+    }
 
-  
+
+    
   // ======== link to portfolio projects ======= //
   
    $('.portfolio-div div').on('click', function(){
-        window.location.href = 'https://www.yahoo.com/'
+        // window.location.href = 'https://www.yahoo.com/';
+      $('.portfolio-projects').css('display', 'none');
+      $('.show-project').css('display', 'block');
+      $('.show-project').animate({width:'43rem'},{queue:false, duration: 3000}).animate({height:'23rem'},3000);
+      
+      console.log($(this).data('project'));
+      
+      switch ($(this).data('project')) {
+        case 'broadbrush':
+                $('.description').text(broadbrush.description);
+                $('.github').attr('href',broadbrush.github);
+                $('.internet').attr('href',broadbrush.website);
+          break;
+        case 'scrapping': 
+                $('.description').text(scrapping.description);
+                $('.github').attr('href', scrapping.github);
+                $('.internet').attr('href', scrapping.website);
+            break;
+        case 'clicky':
+                $('.description').text(clicky.description);
+                $('.github').attr('href', clicky.github);
+                $('.internet').attr('href', clicky.website);
+            break;
+         default:
+          break;
+      }
+     
+   });
 
-   })
+   $('.exit').on('click', function(){
+        $('.show-project').css('display', 'none');
+        $('.portfolio-projects').css('display','block');
+   });
    
 
  // ======= responsive navbar ========= //
