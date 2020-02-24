@@ -288,25 +288,7 @@ textarea{
   border-radius: 3rem;
   box-shadow: 3px 4px 7px 0px;
 }
-.exit{
-  position: absolute;
-  right: 1.5rem;
-  top: 1.5rem;
-}
-.exit:hover{
-  cursor: pointer;
-}
-.show-project div{
-  /* width: 22rem; */
-  color: white;
-  padding-top: 10rem;
-  display: inline-flex;
 
- 
-}
-.show-project p{
-  padding-left: 3rem;
-}
 #github{
   margin-right: 3rem;
 }
@@ -314,9 +296,76 @@ textarea{
   margin-right:6rem
 }
 
+/*============= new portfolio ============ */
 
 
 
+
+
+
+.contain {
+  position: relative;
+  width: 21rem;
+  padding: 20px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  width: 100%;
+  border-radius: 1rem
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  
+}
+.middle p{
+  font-weight: bold;
+}
+.img{
+  width: 80%;
+}
+.img2{
+  width: 80%;
+}
+.middle-links{
+  display: flex;
+  justify-content: center;
+}
+
+.contain:hover .image {
+  opacity: 0.4;
+
+}
+
+.contain:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.portfolio-div-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 /* ====== footer ===== */
 
@@ -413,15 +462,7 @@ footer img{
     margin-bottom: 2rem;
     width: 100%;
   }
-  #p3{
-    display: none;
-  }
-  #p6{
-    display: none;
-  }
-  #med-portfolio{
-    display: flex;
-  }
+
 
     /* === nav menu click ==== */
     .menu1{
@@ -451,20 +492,16 @@ footer img{
 
       /* === end nav menu click ==== */ 
 
-      .show-project {
-        display: none;
-        background: #4DA1A9;
-        margin: auto;
-        position: relative;
-        width: auto;
-        height: 23rem;
-        overflow: hidden;
-        border-radius: 3rem;
-        box-shadow: 3px 4px 7px 0px;
+    .contain{
+      width: 33rem;
     }
-    .portfolio-div div{
-      margin: 13px;
+    .img{
+      width: 90%;
     }
+    .img2{
+      width: 90%;
+    }
+
 
 }
 @media only screen and (min-width: 320px) and (max-width: 420px){
@@ -536,21 +573,6 @@ footer img{
     font-weight: bolder;
     padding-left: 11px;
   }
-  #p2{
-    display: none;
-  }
-  #p3{
-    display: none;
-  }
-  #p5{
-    display: none;
-  }
-  #p6{
-    display: none;
-  }
-  .sm-portfolio{
-    display: flex;
-  }
 
       /* === nav menu click ==== */
       .menu1{
@@ -580,32 +602,15 @@ footer img{
   
         /* === end nav menu click ==== */ 
 
-        .show-project {
-         width: 100%;
-         height: max-content;
-        }
-        .show-project img{
-          width: 57px;
-          border-radius: 50%;
-        }
-        .show-project div{
-          display: block;
-          padding-top: 74px;
-        }
-        .show-project img:hover{
-          background: darkgrey;
-        }
-      .show-project p{
-        margin: auto;
-        padding-top: 14px;
-        width: 14rem;
-      }
-      .show-project p{
-        padding-left: 0;
-        padding-bottom: 29px;
-      }
-      #internet{
-        margin-right: 0;
-      }
-
+    .contain{
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 100%;
+    }
+    .container{
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
 }
