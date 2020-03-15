@@ -324,7 +324,7 @@ textarea{
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 34%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -336,16 +336,24 @@ textarea{
   font-weight: bold;
 }
 .img{
-  width: 80%;
+  width: 60%;
+  /* background: #343A45; */
+  border-radius: 50%;
 }
 .img2{
-  width: 80%;
+  width: 60%;
+  /* background: #343A45; */
+  border-radius: 50%;
 }
 .middle-links{
   display: flex;
   justify-content: center;
 }
-
+.portfolio-features{
+  position: absolute;
+  right: 0px;
+  padding-top: 1rem;
+}
 .contain:hover .image {
   opacity: 0.4;
 
