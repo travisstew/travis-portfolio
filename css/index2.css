@@ -352,7 +352,7 @@ textarea{
 .portfolio-features{
   position: absolute;
   right: 0px;
-  padding-top: 1rem;
+  padding-top: 0;
 }
 .contain:hover .image {
   opacity: 0.4;
