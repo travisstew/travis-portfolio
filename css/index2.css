@@ -395,7 +395,11 @@ footer img{
 .icons a{
   padding-right: 1rem;
 }
-
+footer p{
+  text-align: center;
+  padding-top: 1rem;
+  color: white;
+}
 
 
 
