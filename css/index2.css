@@ -6,14 +6,21 @@
 
 
 /*====== navbar ===== */
-
-li{
+.menu li{
   list-style-type: none;
   /* display: inline; */
   display: inline-block;
   padding-left: 3rem;
   padding-right: 3rem;
+
 }
+/* li{
+  list-style-type: none;
+ 
+  display: inline-block;
+  padding-left: 3rem;
+  padding-right: 3rem;
+} */
 
 nav{
   padding-top: 1.5rem;
@@ -45,7 +52,7 @@ nav a:hover{
   color:#4DA1A9;
   font-weight: 700;
 }
-ul{
+.menu{
   margin:0;
   /* width: 50%; */
   margin: auto;
@@ -114,8 +121,12 @@ ul{
 }
 #greet h2{
   font-size: 1.3em;
+  /* padding-bottom: 2rem; */
+}
+#greet h3{
   padding-bottom: 2rem;
-
+  padding-top: .5rem;
+  color: #4DA1A9;
 }
 
 /* ==== about ====== */
@@ -149,6 +160,39 @@ ul{
   color: #5c5c5c;
   line-height: 1.5rem;
 }
+/* ==== skills ===== */
+
+#skills {
+  font-size: 2.1rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.skill_tabs img{
+  width: 8.5rem;
+  display: block;
+  margin: auto;
+  padding-bottom: 1rem;
+
+}
+.skills{
+  display: flex;
+  justify-content: center;
+}
+.skill_tabs{
+  width: 30%;
+}
+.skill_tabs ul{
+  display: block;
+    margin: auto;
+    width: 20%;
+}
+.skill_tabs li{
+  text-align: center;
+}
+.skill_tabs li p{
+  font-size: 1.5rem;
+}
+
 
 /* ======= portfolio ====== */
 
@@ -405,8 +449,8 @@ footer p{
 
 
 /* ===== tablet ======= */
-
-@media only screen and (min-width: 768px) and (max-width: 840px){
+/* 840 768 */
+@media only screen and (min-width: 421px) and (max-width: 900px){
  
   /*==========  responsive nav ========================= */
   nav{
@@ -524,6 +568,7 @@ footer p{
     display: none;
     position: absolute;
     width: 100%;
+    
   }
   .about-div img{
     display: none;
@@ -533,8 +578,9 @@ footer p{
     background-position-y: 0rem;
     background-size: 31rem;
   }
-  ul{
-    display: inline-grid;
+  .menu{
+    /* display: inline-grid; */
+    display: none;
   }
   #greet{
     margin-top: 19rem;

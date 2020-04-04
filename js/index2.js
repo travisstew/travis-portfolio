@@ -49,7 +49,7 @@ $(document).ready(function () {
      $('nav').toggleClass('nav1')
      $('span').toggleClass('bar1');
      $('nav a').toggleClass('span1')
-     $('li').toggleClass('li');
+     $('.menu li').toggleClass('li');
     
      });
 
